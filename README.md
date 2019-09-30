@@ -25,7 +25,7 @@ Design
 
 Development
 --------
-**create**
+**Create**
 
 1. Get inputs
 2. Check # fo  arguments. ex.) 
