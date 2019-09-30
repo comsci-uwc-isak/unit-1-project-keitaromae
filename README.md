@@ -25,6 +25,13 @@ Design
 
 Development
 --------
+**create**
+
+1. Get inputs
+2. Check # fo  arguments 
+   if 4 then continue, if not exit "message"
+3. Write to main file with one extra line. Not erasing other entries.
+4. Create car trip file with License plate.txt
 
 Evaluation
 -----------
