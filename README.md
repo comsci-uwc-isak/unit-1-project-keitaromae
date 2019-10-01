@@ -20,6 +20,21 @@ We are creating some project for rental car shop that can make entire check in a
 This app memorizes all the car types, date and mileage. It is easier for the owner to keep everything in touch. 
 Planning to make some application system with really easy installation. Since the rental shop's owner are not feeling confident with all the techy things, this app can be easily installed by attaching USB disks. After that, just activate our program inside and do all the process to execute the work.
 
+### Definition of problem
+
+### Solution proposed
+
+### Success Criteria
+These are measurable outcomes
+1. A car can be created and stored in the database.
+1. A car information can be edited.
+1. A car can be deleted from the database be recorded ad stored for an existing car.
+1. The installation is ***simple-> one step provess***.
+1. A summary (total/average distance traveled) can be generated for a particular car.
+1. Trips can be recorded ad stored for an existing car.
+1. A basic daravase system is implemented.
+1. A basic backup functionality is available.
+
 Design
 ---------
 
