@@ -23,7 +23,9 @@ Planning to make some application system with really easy installation. Since th
 ### Definition of problem
 
 ### Solution proposed
+Rationalefor proposed solution
 
+I decided to use BASH to program Car rental project. 
 ### Success Criteria
 These are measurable outcomes
 1. A car can be created and stored in the database.
