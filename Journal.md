@@ -15,3 +15,4 @@ Creating back up system. I am currently trying to come up with some back up syst
 operated files. To do so, I need to understand many more field of knowledges so it is taking quite few days to complete.
 
 10/7 19
+Created some test running program. Code that tests all the program is working right. If it detects any error, it will tell operator immediatry. Creating the actual code step by step. First you check this file is working correctly and go on to next step. It might feel complicated at first but it is still understandable.
