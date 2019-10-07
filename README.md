@@ -52,6 +52,18 @@ Development
 
 Evaluation
 -----------
+Test 1:
+The first run of the test file was unsuccessfull because the Database folfer was not existent.
+Also the create program did not store the license file inside the Database folder. Changing the line 'echo " " > Database/$license.txt'. Solved this issue.
+
+Second run of the program we had one issue: the test file needed to move to the main folder '''.sh
+cd ../
+'''
+This is necessary because the 'create.sh' resides in the main folder wheread the test file is inside the /tests folders.
 
 
+lastline = $( tail -n 1 Database/maincarfile.txt )
+This code demonstrates the last line of the maincarfile.txt which is the most resent line that are added.
+This is to check that the car was successfully added in main file or not.
 
+To
