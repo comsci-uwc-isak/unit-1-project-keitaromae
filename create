@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#This program let the user to type information in, and it will automatically write it down
+#to the file maincarfile.txt
+
+if [ $# -ne 4 ]; then
+	echo "Wrong input. Please enter Plate, Model, Color and Passengers"
+	exit
+fi
+
+#Number of arguments is correct. Continue
+plate=$1
+model=$2
+color=$3
+PP=$4
+
+#Adding new entry to file maincarfile.txt
+echo "$plate $model $color $PP" >> maincarfile.txt
+
+bash frame "Car created successfully"
