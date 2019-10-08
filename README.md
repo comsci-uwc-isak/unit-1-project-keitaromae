@@ -145,9 +145,9 @@ lastline = $( tail -n 1 Database/maincarfile.txt )
 This code demonstrates the last line of the maincarfile.txt which is the most resent line that are added.
 This is to check that the car was successfully added in main file or not.
 
-Test 2: Everything works fine
+Test 2: Everything worked fine
 
-```
+```sh
 #!/bin/bash
 
 #This file test the first success criterion, namely,
