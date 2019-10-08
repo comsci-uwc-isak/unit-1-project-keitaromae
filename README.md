@@ -42,11 +42,84 @@ Design
 
 Development
 --------
-**Install program**
+***Install program***
 
-**Uninstall program**
+```sh
+#!/bin/bash
 
-**Create**
+#This file creates the folder structure for the
+#minimal Car Rental App
+
+echo "Starting the installation"
+echo "Default install path is /home/filip/Desktop"
+echo "Press Enter to continue installation, if you"
+echo "want to change install path press x  "
+
+read choice
+
+#checking what user eneted
+if [[ ($choice == x) ]];then
+    echo "Enter installation path, then press Enter"
+    read path
+
+    #movih to the desired location
+    cd $path
+    echo "moving to $path"
+
+else
+  #moving to default location
+  cd /home/filip/Desktop
+fi
+
+#Create App folder
+mkdir RentalCarApp
+
+#move to created folder
+cd RentalCarApp
+
+#create for database and scripts
+mkdir database
+mkdir scripts
+
+echo "structure created successfully"
+```
+
+***Backup system***
+```sh
+#!/bin/bash
+
+#Automated backup system
+
+#Name of the files or folders to take Backup
+backup_files="/"
+
+#Destination of Backup.
+dest="/"
+
+#Create archive file name
+day=$(date +%Y-%m-%d)
+hostname=$(hostname -s)
+archive_file="$hostname-$day.tar.gz"
+
+#Print start status message.
+echo "Backing up $backup_files to $dest/$archive_file"
+date
+echo
+
+#Backup the files using tar.
+tar czf $dest/$archive_file $backup_files
+
+#Print end status message.
+echo
+echo "Backup finished"
+date
+
+#Long listing of files in $dest to check file sizes
+ls -1h $dest
+
+chmod 755 backup.sh
+```
+***Create***
 1. Get inputs
 2. Check # for arguments ex.) 
    ***if 4 then continue, if not exit "message"***
@@ -74,9 +147,9 @@ echo "$plate $model $color $PP" >> maincarfile.txt
 
 bash frame "Car created successfully"
 ```
-**Record**
+***Record***
 
-**Frame**
+***Frame***
 ```sh
 #!/bin/bash
 
