@@ -23,15 +23,15 @@ Planning to make some application system with really easy installation. Since th
 ### Definition of problem
 
 ### Solution proposed
-Rationalefor proposed solution
+I decided to use BASH to program Car rental project.
+It is more simple to both code and execute by using bash program.
 
-I decided to use BASH to program Car rental project. 
 ### Success Criteria
 These are measurable outcomes
 1. A car can be created and stored in the database.
 1. A car information can be edited.
 1. A car can be deleted from the database be recorded ad stored for an existing car.
-1. The installation is ***simple-> one step provess***.
+1. The installation is ***simple-> one step process***.
 1. A summary (total/average distance traveled) can be generated for a particular car.
 1. Trips can be recorded ad stored for an existing car.
 1. A basic daravase system is implemented.
@@ -43,12 +43,33 @@ Design
 Development
 --------
 **Create**
-
 1. Get inputs
 2. Check # for arguments ex.) 
    ***if 4 then continue, if not exit "message"***
 3. Write to main file with one extra line. Not erasing other entries.
 4. Create car trip file with License plate.txt
+```sh
+#!/bin/bash
+
+#This program let the user to type information in, and it will automatically write it down
+#to the file maincarfile.txt
+
+if [ $# -ne 4 ]; then
+	echo "Wrong input. Please enter Plate, Model, Color and Passengers"
+	exit
+fi
+
+#Number of arguments is correct. Continue
+plate=$1
+model=$2
+color=$3
+PP=$4
+
+#Adding new entry to file maincarfile.txt
+echo "$plate $model $color $PP" >> maincarfile.txt
+
+bash frame "Car created successfully"
+```
 
 Evaluation
 -----------
@@ -67,3 +88,4 @@ This code demonstrates the last line of the maincarfile.txt which is the most re
 This is to check that the car was successfully added in main file or not.
 
 **Summary:**
+Test summary: 
