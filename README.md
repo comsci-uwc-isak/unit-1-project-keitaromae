@@ -132,15 +132,47 @@ Test 1:
 The first run of the test file was unsuccessfull because the Database folfer was not existent.
 Also the create program did not store the license file inside the Database folder. Changing the line 'echo " " > Database/$license.txt'. Solved this issue.
 
-Second run of the program we had one issue: the test file needed to move to the main folder '''.sh
+Second run of the program we had one issue: the test file needed to move to the main folder 
+```sh
 cd ../
-'''
+```
 This is necessary because the 'create.sh' resides in the main folder wheread the test file is inside the /tests folders.
 
 
+```sh 
 lastline = $( tail -n 1 Database/maincarfile.txt )
+```
 This code demonstrates the last line of the maincarfile.txt which is the most resent line that are added.
 This is to check that the car was successfully added in main file or not.
 
+Test 2: Everything works fine
+
+```
+#!/bin/bash
+
+#This file test the first success criterion, namely,
+#A car can be created and stored in the database
+
+#step1: create a car using the script create
+bash ../create TXM301 issan red 9
+
+#step 2: check that the livense file.txt was created
+if [ -f "../Database/TXM301.txt" ]; then
+	echo "test one: a txt file was created inside the database: passed"
+
+else
+	echo "test one: Error, file not found: not passed"
+fi
+
+#step 3: Check that the car was added to the main file
+cat Database/maincarfile.txt
+lastline=$( tail -n 1 Database/maincarfile.txt )
+if [ "TXM301 nissan Red 9" == $lastline ]; then
+	echo "Test two: Record was entered correctly: Passed"
+else
+	echo "Test two: Failed"
+fi
+
+```
 **Summary:**
 Test summary: 
