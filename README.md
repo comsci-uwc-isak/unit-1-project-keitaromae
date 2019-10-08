@@ -248,4 +248,4 @@ fi
 
 ```
 **Summary:**
-Test summary: 
+We did sturctural testing a.k.a White-box testing, dynamic testing and alpha testing. White-box testing is the test method that looks inside the software that is being tested and used that knowledge as part of its teting process. 
