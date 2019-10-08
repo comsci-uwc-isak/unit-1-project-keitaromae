@@ -42,6 +42,10 @@ Design
 
 Development
 --------
+**Install program**
+
+**Uninstall program**
+
 **Create**
 1. Get inputs
 2. Check # for arguments ex.) 
@@ -70,7 +74,58 @@ echo "$plate $model $color $PP" >> maincarfile.txt
 
 bash frame "Car created successfully"
 ```
+**Record**
 
+**Frame**
+```sh
+#!/bin/bash
+
+#This is the program that creates some frame around the word user type in
+
+word=$1
+len=${#word}
+
+
+for (( i=0; i<100; i++ ))
+	do
+		echo -n "*"
+	done
+
+echo " "
+
+
+echo -n "*"
+for (( i=0; i<98; i++ ))
+	do
+		echo -n " "
+	done
+echo "*"
+
+
+echo -n "*"
+echo $word
+
+for (( i=0; i<98; i++ ))
+	do
+		echo -n " "
+	done
+echo "*"
+
+
+echo -n "*"
+for (( i=0; i<98; i++ ))
+	do
+		echo -n " "
+	done
+echo "*"
+
+
+for (( i=0; i<100; i++ ))
+	do
+		echo -n "*"
+	done
+
+```
 Evaluation
 -----------
 Test 1:
