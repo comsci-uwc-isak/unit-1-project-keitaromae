@@ -248,4 +248,6 @@ fi
 
 ```
 **Summary:**
-We did sturctural testing a.k.a White-box testing, dynamic testing and alpha testing. White-box testing is the test method that looks inside the software that is being tested and used that knowledge as part of its teting process. 
+We did sturctural testing a.k.a White-box testing, dynamic testing and alpha testing. White-box testing is the test method that looks inside the software that is being tested and used that knowledge as part of its testing process. 
+Dynamic testing takes place when the program is run. It can be done by executing software.
+Alpha test is done by developer itself. On the other hand, Beta is the version that customer can actually touch and feel the product.
