@@ -55,10 +55,10 @@ echo "Default install path is /Desktop/"
 echo "Press Enter to continue installation"
 echo "press x to change the installation path"
 
-read choice
+read sel
 
-#checking what user eneted
-if [[ ($choice == x) ]];then
+#checking what user entered
+if [[ ($sel == x) ]];then
     echo "Enter installation path, then press Enter"
     read path
 
@@ -68,7 +68,7 @@ if [[ ($choice == x) ]];then
 
 else
   #moving to default location
-  cd /Desktop
+  cd ~/Desktop
 fi
 
 #Create App folder
