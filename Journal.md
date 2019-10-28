@@ -18,7 +18,9 @@ operated files. To do so, I need to understand many more field of knowledges so 
 Created some test running program. Code that tests all the program is working right. If it detects any error, it will tell operator immediatry. Creating the actual code step by step. First you check this file is working correctly and go on to next step. It might feel complicated at first but it is still understandable.
 
 10/28 19
-Q1. What skills have you developed so far? Throughout the session of creating car rental app, I learned to see things from distance.
-Q2. What have orked for you in the classroom of CS?
+Q1. What skills have you developed so far? Throughout the session of creating car rental app, I learned to see things from distance. By seeing topic from several and third peosons view, we are able to think out of the box.
+Q2. What have worked for you in the classroom of CS? Repository and review journal really helped me to improve and also to revisit what we have learned. 
 Q3. What are some things/ activities stratefies that you would change in the CS classroom to achieve your best in the next
-6 weeks.
+6 weeks. Take the reflection process more seriously, and try to finish all the tasks by the deadline.
+
+
