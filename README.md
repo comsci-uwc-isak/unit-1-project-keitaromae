@@ -44,6 +44,12 @@ Development
 --------
 ***Install program***
 
+1. Get inputs (Ask where to install the app)
+2. If they "Enter", continue the process.
+3. If they press "X", change the installation path.
+4. Read inputs ($path)
+5. Install file to $path
+
 ```sh
 #!/bin/bash
 
@@ -62,7 +68,7 @@ if [[ ($sel == x) ]];then
     echo "Enter installation path, then press Enter"
     read path
 
-    #movih to the desired location
+    #moving to the desired location
     cd $path
     echo "moving to $path"
 
@@ -85,6 +91,7 @@ echo "structure created successfully"
 ```
 
 ***Backup system***
+
 ```sh
 #!/bin/bash
 
@@ -148,55 +155,104 @@ echo "$plate $model $color $PP" >> maincarfile.txt
 bash frame "Car created successfully"
 ```
 ***Record***
+1. Get inputs
+2. Check # for arguments ex.)
+***if 4 then continue, if not "message"***
+3. Write the inputs to Database's .txt file.
+4. Show message ex.)
+***Data has been stored correctly***
 
-***Frame***
 ```sh
 #!/bin/bash
 
-#This is the program that creates some frame around the word user type in
+#This program records license plate, Km, datein, dateout
 
+if [ $# -ne 4 ]; then
+	echo "please enter license, km, datein, dateout"
+	exit
+fi
+
+plate=$1
+km=$2
+datein=$3
+dateout=$4
+
+echo "$km, $datein, $dateout" >> ../Database/$plate.txt
+
+bash frame5 "data has been stored correctly"
+```
+
+***Frame***
+1. Check the length of the word typed by the user.
+2. Insert that word inside the frame of "*"
+3. Line the word to the middle of the frame.
+
+```sh
+#!/bin/bash
+
+echo "enter"
+
+#this code reads argument, which is bash frame *argument
 word=$1
-len=${#word}
 
 
 for (( i=0; i<100; i++ ))
-	do
-		echo -n "*"
-	done
-
+do
+echo -n "*"
+done
 echo " "
 
 
-echo -n "*"
-for (( i=0; i<98; i++ ))
-	do
-		echo -n " "
-	done
-echo "*"
-
 
 echo -n "*"
-echo $word
 
-for (( i=0; i<98; i++ ))
-	do
-		echo -n " "
-	done
-echo "*"
 
+for (( i=1; i<99; i++ ))
+do
+	echo -n " "
+done
+echo -n "*"
+echo " "
+
+len=${#word}
+(( spacing=(100-$len)/2 ))
 
 echo -n "*"
-for (( i=0; i<98; i++ ))
-	do
-		echo -n " "
-	done
-echo "*"
+for (( i=1; i<$spacing; i++))
+do
+	echo -n	" "
+done
 
+echo -n $word
+
+
+
+for (( i=( 100-$spacing ); i<99; i++))
+do
+	echo -n " "
+done
+
+(( odd=($spacing+$spacing+$len) ))
+if [ $odd -eq 99 ]; then
+echo -n " "
+fi
+echo -n "*"
+
+
+echo " "
+echo -n "*"
+for (( i=1; i<99; i++ ))
+do
+        echo -n " "
+done
+echo -n "*"
+echo " "
 
 for (( i=0; i<100; i++ ))
-	do
-		echo -n "*"
-	done
+do
+echo -n "*"
+done
+echo " "
 
 ```
 ***Summary***
