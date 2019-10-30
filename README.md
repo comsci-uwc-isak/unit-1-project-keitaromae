@@ -91,40 +91,26 @@ echo "structure created successfully"
 ```
 
 ***Backup system***
+1. Read inputs ($location)
+2. Check the word# of the inputs
+3. If its -ne to 1 show ***message***
+4. If its not, execute backup process.
+5. Show message "message"
 
 ```sh
 #!/bin/bash
 
-#Automated backup system
+#This program will backup the entirity of the database folder within the carrentalapp.
 
-#Name of the files or folders to take Backup
-backup_files="/"
+location=$1
 
-#Destination of Backup.
-dest="/"
-
-#Create archive file name
-day=$(date +%Y-%m-%d)
-hostname=$(hostname -s)
-archive_file="$hostname-$day.tar.gz"
-
-#Print start status message.
-echo "Backing up $backup_files to $dest/$archive_file"
-date
-echo
-
-#Backup the files using tar.
-tar czf $dest/$archive_file $backup_files
-
-#Print end status message.
-echo
-echo "Backup finished"
-date
-
-#Long listing of files in $dest to check file sizes
-ls -1h $dest
-
-chmod 755 backup.sh
+if [[ $# -ne 1 ]]; then
+	echo "Sorry, there was an error with backing up your files."
+	exit
+else
+	cp -a /Users/keitaromae/Desktop/carrentalapp/Database $location
+	echo "Successfully backed up into $location."
+fi
 ```
 ***Create***
 1. Get inputs
@@ -295,7 +281,7 @@ exit
 Evaluation
 -----------
 Test 1:
-The first run of the test file was unsuccessfull because the Database folfer was not existent.
+The first run of the test file was unsuccessfull because the Database folder was not existent.
 Also the create program did not store the license file inside the Database folder. Changing the line 'echo " " > Database/$license.txt'. Solved this issue.
 
 Second run of the program we had one issue: the test file needed to move to the main folder 
