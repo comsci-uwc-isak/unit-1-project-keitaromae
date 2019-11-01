@@ -34,7 +34,7 @@ do
 done
 
 echo -n $word
-#page 1
+
 
 
 
@@ -66,4 +66,4 @@ echo -n "*"
 done
 echo " "
 
-#page 2
+
