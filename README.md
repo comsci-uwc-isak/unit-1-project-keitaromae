@@ -40,10 +40,13 @@ These are measurable outcomes
 Design
 ---------
 ![design](名称未設定.001.jpeg)
-
-![floq chart Create.sh](IMG_3625.JPG)
+**FIG1**First design concept
+![flow chart Create.sh](IMG_3625.JPG)
+**FIG2**Flow chart of create.sh
 ![flow chart delete.sh](IMG_3626.JPG)
+**FIG2**Flow chart of delete.sh
 ![flow chart install.sh](IMG_3075.jpg)
+**FIG3**Flow chart of install.sh
 
 Development
 --------
