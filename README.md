@@ -385,7 +385,7 @@ bash frame5 jesus
 Programmer_Keitaro Mae
 ```
 
-***Man page for backup***
+***Man page for backup.sh***
 ```man
 .\" Manpage for backup.sh
 .TH man 6 "1 Nov 2019" "1.0" "backup man page"
