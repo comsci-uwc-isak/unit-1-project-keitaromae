@@ -40,6 +40,11 @@ These are measurable outcomes
 Design
 ---------
 ![design](名称未設定.001.jpeg)
+
+![floq chart Create.sh](IMG_3625.JPG)
+![flow chart delete.sh](IMG_3626.JPG)
+![flow chart install.sh](IMG_3075.jpg)
+
 Development
 --------
 ***Install program***
