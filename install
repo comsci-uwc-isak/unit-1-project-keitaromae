@@ -4,7 +4,7 @@
 #minimal Car Rental App
 
 echo "Starting the installation"
-echo "Default install path is /home/filip/Desktop"
+echo "Default install path is /home/keitaromae/Desktop"
 echo "Press Enter to continue installation, if you"
 echo "want to change install path press x  "
 
@@ -15,23 +15,23 @@ if [[ ($choice == x) ]];then
     echo "Enter installation path, then press Enter"
     read path
 
-    #movih to the desired location
+    #moving to the desired location
     cd $path
     echo "moving to $path"
 
 else
   #moving to default location
-  cd /home/filip/Desktop
+  cd /home/keitaromae/Desktop
 fi
 
 #Create App folder
-mkdir RentalCarApp
+mkdir carrentalapp
 
 #move to created folder
-cd RentalCarApp
+cd carrentalapp
 
 #create for database and scripts
-mkdir database
+mkdir Database
 mkdir scripts
 
-echo "structure created successfully"
+bash frame5 "structure created successfully"
