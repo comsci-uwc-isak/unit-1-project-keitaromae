@@ -10,6 +10,7 @@ Contents
   1. [Planning](#planning)
   1. [Design](#design)
   1. [Development](#development)
+  1. [Man page](#man page)
   1. [Evalution](#evaluation)
 
 Planning
