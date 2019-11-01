@@ -65,10 +65,10 @@ read sel
 #checking what user entered
 if [[ ($sel == x) ]];then
     echo "Enter installation path, then press Enter"
-    read path
+    read loc
 
     #moving to the desired location
-    cd $path
+    cd $loc
     echo "moving to $path"
 
 else
