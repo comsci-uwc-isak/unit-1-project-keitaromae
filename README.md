@@ -449,6 +449,25 @@ else
 fi
 
 ```
+
+***Checking Success Criteria***
+
+1. A car can be created and stored in the database.
+
+1. A car information can be edited.
+
+1. A car can be deleted from the database be recorded ad stored for an existing car.
+
+1. The installation is ***simple-> one step process***.
+
+1. A summary (total/average distance traveled) can be generated for a particular car.
+
+1. Trips can be recorded ad stored for an existing car.
+
+1. A basic daravase system is implemented.
+
+1. A basic backup functionality is available.
+
 **Summary:** We did sturctural testing a.k.a White-box testing, dynamic testing and alpha testing. White-box testing is the test method that looks inside the software that is being tested and used that knowledge as part of its testing process. 
 Dynamic testing takes place when the program is run. It can be done by executing software.
 Alpha test is done by developer itself. On the other hand, Beta is the version that customer can actually touch and feel the product.
