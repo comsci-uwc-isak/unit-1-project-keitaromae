@@ -1,0 +1,12 @@
+.\" Manpage for frame
+.TH man 6 "1 Nov 2019" "1.0" "frame man page"
+.SH NAME
+frame \- frame made out of "*" that goes around the word
+.SH SYNOPSIS
+bash frame5 [random word]
+.SH DESCRPITION
+user input $random word will appear inside the frame of "*"
+.SH EXAMPLES
+bash frame5 jesus
+.SH AUTHOR
+Programmer_Keitaro Mae
