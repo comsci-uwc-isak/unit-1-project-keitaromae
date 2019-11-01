@@ -464,11 +464,11 @@ fi
 
 ***Checking Success Criteria***
 
-**A car can be created and stored in the database.**
+1.**A car can be created and stored in the database.**
 ![create](スクリーンショット 2019-11-01 17.38.27.png)
 shown in the screenshot, it is possible to create a car inside the database folder.
 
-**A car information can be edited.**
+1.**A car information can be edited.**
 ![edit](スクリーンショット 2019-11-01 17.43.53.png)
 car data that has been stored can also editable.
 
