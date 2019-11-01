@@ -464,34 +464,34 @@ fi
 
 ***Checking Success Criteria***
 
-1. A car can be created and stored in the database.
+**A car can be created and stored in the database.**
 ![create](スクリーンショット 2019-11-01 17.38.27.png)
 shown in the screenshot, it is possible to create a car inside the database folder.
 
-1. A car information can be edited.
+**A car information can be edited.**
 ![edit](スクリーンショット 2019-11-01 17.43.53.png)
 car data that has been stored can also editable.
 
-1. A car can be deleted from the database be recorded ad stored for an existing car.
+**A car can be deleted from the database be recorded ad stored for an existing car.**
 ![delete](スクリーンショット 2019-11-01 18.33.59.png)
 car data inside the maincarfile.txt file can also be deleted.
 
-1. The installation is ***simple-> one step process***.
+The installation is ***simple-> one step process***.
 ![install](スクリーンショット 2019-11-01 17.37.10.png)
 overall install process is easy and simple. Just simply press Enter to continue, X to change the download route.
 
-1. A summary (total/average distance traveled) can be generated for a particular car.
+**A summary (total/average distance traveled) can be generated for a particular car.**
 ![summary](スクリーンショット 2019-11-01 17.42.26.png)
 by selecting license plate of a car, user can easily get a summary data.
 
-1. Trips can be recorded ad stored for an existing car.
+**Trips can be recorded ad stored for an existing car.**
 ![record](スクリーンショット 2019-11-01 17.40.18.png)
 trip can be recorded by user typing $license $km $datein and $dateout.
 
-1. A basic database system is implemented.
+**A basic database system is implemented.**
 
 
-1. A basic backup functionality is available.
+**A basic backup functionality is available.**
 ![backup](スクリーンショット 2019-11-01 18.36.12.png)
 user can backup their files by selecting the location.
 
