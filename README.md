@@ -10,7 +10,7 @@ Contents
   1. [Planning](#planning)
   1. [Design](#design)
   1. [Development](#development)
-  1. [Man page](#manpage)
+  1. [Manpage](#manpage)
   1. [Evalution](#evaluation)
 
 Planning
@@ -352,7 +352,7 @@ bash frame5 "total distance traveled for $FILE was $total"
 exit
 ```
 
-Man page
+Manpage
 -----------
 ***Man page for create.sh***
 ```man
