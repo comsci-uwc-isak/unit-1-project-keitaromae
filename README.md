@@ -350,6 +350,11 @@ cd ../scripts/
 bash frame5 "total distance traveled for $FILE was $total"
 exit
 ```
+
+Man page
+-----------
+
+
 Evaluation
 -----------
 Test 1:
