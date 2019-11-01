@@ -369,6 +369,38 @@ bash create.sh LXH798 Mazda Red 3
 Programmer_Keitaro Mae
 ```
 
+***Man page for frame5***
+```man
+.\" Manpage for frame
+.TH man 6 "1 Nov 2019" "1.0" "frame man page"
+.SH NAME
+frame \- frame made out of "*" that goes around the word
+.SH SYNOPSIS
+bash frame5 [random word]
+.SH DESCRPITION
+user input $random word will appear inside the frame of "*"
+.SH EXAMPLES
+bash frame5 jesus
+.SH AUTHOR
+Programmer_Keitaro Mae
+```
+
+***Man page for backup***
+```man
+.\" Manpage for backup.sh
+.TH man 6 "1 Nov 2019" "1.0" "backup man page"
+.SH NAME
+backup \- takes backup of the system
+.SH SYNOPSIS
+bash backup [$location]
+.SH DESCRPITION
+It will create a backup file to the location user typed.
+.SH EXAMPLES
+bash backup.sh $location
+.SH AUTHOR
+Programmer_Keitaro Mae
+```
+
 Evaluation
 -----------
 Test 1:
