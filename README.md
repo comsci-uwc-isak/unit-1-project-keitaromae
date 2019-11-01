@@ -308,6 +308,12 @@ fi
 exit 
 ```
 ***Summary***
+1. Check the number of arguments (display on frame)
+2. If the # is -ne 1 show message "enter a license"
+3. Check if the file exists or not
+4. If it didn't show message "file does not exist" exit
+5. Calculate the total KM
+6. Show the result (display on frame)
 ```sh
 #!/bin/bash
 
