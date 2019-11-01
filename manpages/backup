@@ -1,0 +1,12 @@
+.\" Manpage for backup.sh
+.TH man 6 "1 Nov 2019" "1.0" "backup man page"
+.SH NAME
+backup \- takes backup of the system
+.SH SYNOPSIS
+bash backup [$location]
+.SH DESCRPITION
+It will create a backup file to the location user typed.
+.SH EXAMPLES
+bash backup.sh $location
+.SH AUTHOR
+Programmer_Keitaro Mae
