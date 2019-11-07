@@ -1,4 +1,10 @@
 ![CarRental](logo.png)
+```.py
+Marks=22
+Demo=4
+Total=(Marks+Demo)=26
+```
+**Graded on Nov 7**
 
 Car Rental Minimal App
 ===========================
@@ -37,6 +43,21 @@ These are measurable outcomes
 1. A basic daravase system is implemented.
 1. A basic backup functionality is available.
 
+**Criterion A**
+
+|Level|Descriptor|
+|----|-----|
+|5|The client in the car rental office is identified and his situation described. The rationale for choosing the proposed product (Computer tools used) is justified and includes a range of appropriate criteria for evaluating the success of the product.
+|
+```.sh
+Rational
+* You can improve this criterion by solving the following questions about the context: Who is the client?
+Why is the product being developed?
+* One more justificaiton for using BASH is that we were learning it. 
+* You need to elaborate your proposed solution and write how this solution solve the client's problem
+```
+
+
 Design
 ---------
 ![design](名称未設定.001.jpeg)
@@ -50,6 +71,19 @@ Design
 
 ![flow chart install.sh](IMG_3075.jpg)
 **FIG3**Flow chart of install.sh
+
+## Criterion B
+|**level**|**Description**|
+|-----|------------|
+|7|An outline test plan is included but partially complete. A system diagram and some flow diagrams for algorithms in the product are included. They provide a basic understanding of how the product was developed.|
+```.sh
+Rationale
+* Great job with the flow diagrams.
+* You are losing marks in this criterion because you did not include the the descriptions after every figure. 
+The description is a paragraph that explains the figure and tells the reader why you included the figure: "As seen in Fig. 1. the system proposed for the CarRentalApp consist of ...
+*You also forgot to include the test plan, which could be a table or a flow chart indicating the steps to check if your program works or not. Pretty much was you did during the demonstration"
+```
+
 
 Development
 --------
@@ -413,6 +447,19 @@ bash backup.sh $location
 Programmer_Keitaro Mae
 ```
 
+## Criterion C
+|**level**|**Description**|
+|-----|------------|
+|4|The proposed solution is characterized by some appropriate use of existing tools. There is some attempt to explain the techniques used and why they are adequate for the task. All sources are identified.|
+```.sh
+Rationale
+* Neat work here Keitaro
+* One thing you can improve is to research a bit about ManPages and explain what they are/who use them before showing your own manpages.
+* You are losing points here because there is not description or discussion about the code your have included. Next time answer questions such as: Why is this code important? what did you learn new in this code? 
+* You can also include the citations to the references of the sources that you researched in the internet using MLA format. For example: "As shown in [1], to read a file in bash we can use:"  then the reference in the bottom of the document in the References section: [1] Pinzon, Ruben. "Read files in bash", ..... 
+```
+
+
 Evaluation
 -----------
 Test 1:
@@ -481,20 +528,31 @@ car data inside the maincarfile.txt file can also be deleted.
 overall install process is easy and simple. Just simply press Enter to continue, X to change the download route.
 
   1. **A summary (total/average distance traveled) can be generated for a particular car.**
-![summary](スクリーンショット 2019-11-01 17.42.26.png)
+![summary](success criteria/スクリーンショット 2019-11-01 17.42.26.png)
 by selecting license plate of a car, user can easily get a summary data.
 
   1. **Trips can be recorded ad stored for an existing car.**
-![record](スクリーンショット 2019-11-01 17.40.18.png)
+![record](success criteria/スクリーンショット 2019-11-01 17.40.18.png)
 trip can be recorded by user typing $license $km $datein and $dateout.
 
   1. **A basic database system is implemented.**
 
 
   1. **A basic backup functionality is available.**
-![backup](スクリーンショット 2019-11-01 18.36.12.png)
+![backup](success criteria/スクリーンショット 2019-11-01 18.36.12.png)
 user can backup their files by selecting the location.
 
 **Summary:** We did sturctural testing a.k.a White-box testing, dynamic testing and alpha testing. White-box testing is the test method that looks inside the software that is being tested and used that knowledge as part of its testing process. 
 Dynamic testing takes place when the program is run. It can be done by executing software.
 Alpha test is done by developer itself. On the other hand, Beta is the version that customer can actually touch and feel the product.
+
+# Criterion D
+|**level**|**Description**|
+|-----|------------|
+|3|The product is partially evaluated against the success criteria identified in criterion A. Recommendations for further improvement of the product are largely realistic.
+|
+```.sh
+Rationale
+* You evaluation of the success criteria is sufficient however, you are missing marks because you did not include the section for Future Improvements. This is basically a reflection about the limitations of your solution and how it could be improved or extended.
+* good idea with the pictures for the success criteria
+```
